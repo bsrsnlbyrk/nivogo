@@ -32,8 +32,8 @@ const HowItWorks = () => {
 
   return (
     <div className="text-center mt-[64px] pb-[8px] md:borber-b border-[#DBDBDB]">
-      <p className="text-lg leading-6 font-medium text-[#313131]">
-        NASIL ÇALIŞIR?
+      <p className="mb-3 text-lg leading-6 font-medium text-[#313131] tracking-extremely-wide">
+        NASIL ÇALIŞIR
       </p>
       <p className="text-[56px] leading-[64px] font-bold text-[#333333]">
         Hayata Döndürmenin <span className="text-[#01675A]">Adımları</span>
@@ -43,9 +43,9 @@ const HowItWorks = () => {
         variant="underlined"
         classNames={{
           tabList:
-            "mt-[74px] gap-x-[150px] w-fit relative rounded-none p-0 font-normal mx-auto border-b overflow-hidden",
+            "mt-[74px] gap-x-[150px] w-fit relative rounded-none p-0 font-normal mx-auto overflow-hidden",
           cursor: "w-full bg-[#22d3ee]",
-          tab: "max-w-fit px-0 h-12",
+          tab: "max-w-fit px-0 h-12 [&>span]:h-1 [&>span]:bg-[#01675A]",
           tabContent:
             "text-[23px] outline-none leading-6 text-[#999999] group-data-[selected=true]:font-bold group-data-[selected=true]:text-[#222222]",
         }}

@@ -27,7 +27,7 @@ const Newsletter = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
-        <Button className="bg-[#01675A] text-white text-[19px] leading-[26px] font-bold md:px-[40px] md:mt-[77px] rounded-full md:font-black py-3">
+        <Button className="bg-[#01675A] text-white text-[19px] leading-[26px] font-bold md:h-[53px] md:px-[40px] md:mt-[77px] rounded-full md:font-black py-3">
           Hemen Başla
         </Button>
       </div>

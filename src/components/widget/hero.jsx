@@ -30,7 +30,7 @@ const Hero = () => {
             variant="bordered"
             startContent={<Logo />}
             radius="2xl"
-            className="bg-white flex border border-[#01675A] rounded-2xl gap-x-3 md:w-[251px] pl-3 py-[5px] mt-[48px] ml-[164px] justify-start justify-self-center"
+            className="flex justify-start gap-x-3 pl-3 py-[5px] mt-[48px] ml-[164px] border border-[#01675A] rounded-2xl bg-white md:w-[251px] md:h-[58px]"
           >
             HAYATA DÖNDÜR
           </Button>

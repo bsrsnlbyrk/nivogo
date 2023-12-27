@@ -3,6 +3,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useUserAgent } from "next-useragent";
 
 const Footer = () => {
@@ -20,22 +21,34 @@ const Footer = () => {
         </div>
         <div className="flex gap-x-[96px]">
           <div className="flex flex-col gap-y-[42px] md:gap-y-[29px]">
-            <p className="md:mb-[10px] whitespace-nowrap font-black text-base leading-[21px] md:text-[23px] md:leading-[30px]">
-              Müşteri Hizmetleri
-            </p>
-            <p className="font-black text-base leading-[21px]">Kayıt Ol</p>
-            <p className="font-black text-base leading-[21px]">Giriş Yap</p>
+            <Link href="#">
+              <p className="md:mb-[10px] whitespace-nowrap font-black text-base leading-[21px] md:text-[23px] md:leading-[30px]">
+                Müşteri Hizmetleri
+              </p>
+            </Link>
+            <Link href="/hesap-olustur">
+              <p className="font-black text-base leading-[21px]">Kayıt Ol</p>
+            </Link>
+            <Link href="/giris">
+              <p className="font-black text-base leading-[21px]">Giriş Yap</p>
+            </Link>
           </div>
           <div className="flex flex-col gap-y-[42px] md:gap-y-[29px]">
-            <p className="md:mb-[10px] font-black text-base leading-[21px] md:text-[23px] md:leading-[30px]">
-              Yardım
-            </p>
-            <p className="font-black text-base leading-[21px]">
-              Sıkça Sorulan Sorular
-            </p>
-            <p className="font-black text-base leading-[21px]">
-              Nivogo Ne Yapar?
-            </p>
+            <Link href="#">
+              <p className="md:mb-[10px] font-black text-base leading-[21px] md:text-[23px] md:leading-[30px]">
+                Yardım
+              </p>
+            </Link>
+            <Link href="#">
+              <p className="font-black text-base leading-[21px]">
+                Sıkça Sorulan Sorular
+              </p>
+            </Link>
+            <Link href="/nasil-calisir">
+              <p className="font-black text-base leading-[21px]">
+                Nivogo Ne Yapar?
+              </p>
+            </Link>
           </div>
         </div>
       </div>
@@ -67,11 +80,19 @@ const Footer = () => {
         </div>
         {!isMobile ? (
           <div className="flex mt-[42px] items-end justify-between">
-            <div className="flex mb-3 text-base leading-6 font-bold">
-              <span>About</span>
-              <span>Portfolio</span>
-              <span>Blog</span>
-              <span>Contact</span>
+            <div className="flex gap-x-9 mb-3 text-base leading-6 font-bold">
+              <Link href="/hakkimizda">
+                <span>About</span>
+              </Link>
+              <Link href="/partnerlerimiz">
+                <span>Portfolio</span>
+              </Link>
+              <Link href="/">
+                <span>Blog</span>
+              </Link>
+              <Link href="/bize-ulasin">
+                <span>Contact</span>
+              </Link>
             </div>
             <p className="text-base leading-6">
               © Copyright 2023 Nivogo Tüm Haklar Saklıdır.
