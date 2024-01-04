@@ -27,14 +27,14 @@ const Signin = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center relative md:pb-[232px]">
+    <div className="px-2 flex flex-col justify-center relative md:pb-[232px] md:items-center md:px-0">
       <Tabs
         variant="light"
         selectedKey={selectedTab}
         onSelectionChange={handleSelectionChange}
         classNames={{
           tabList:
-            "mt-[74px] gap-x-2 w-fit relative rounded-none p-0 font-normal mx-auto overflow-hidden",
+            "mt-[74px] gap-x-2 w-full relative rounded-none p-0 font-normal overflow-hidden md:w-fit md:mx-auto",
           cursor: "w-full bg-[#22d3ee]",
           tab: "md:w-[205px] px-[14px] h-12 bg-[#F2F2F2] [&>span]:bg-[#01675A] text-white rounded-b-none [&>span]:rounded-b-none",
           tabContent:

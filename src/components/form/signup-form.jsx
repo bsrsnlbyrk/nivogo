@@ -82,7 +82,7 @@ const SignupForm = () => {
         kabul ediyorum.
       </Checkbox>
       <Button className="text-white text-base leading-[18px] font-medium rounded-[6px] bg-[#01675A]">
-        Giriş Yap
+        Kayıt Ol
       </Button>
       <p className="text-base leading-[22px] text-center">
         Hesabınız mı var?{" "}

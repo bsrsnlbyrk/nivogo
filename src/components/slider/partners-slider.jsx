@@ -19,8 +19,8 @@ const PartnersSlider = () => {
   };
 
   return (
-    <div className="w-full mt-[150px] text-center">
-      <p className="w-fit mx-auto border-b-[5px] border-[#01675A] text-[#313131] text-[56px] leading-[64px] font-bold mb-2">
+    <div className="w-full mt-10 text-center md:mt-[150px]">
+      <p className="w-fit mx-auto border-b-[5px] border-[#01675A] text-[28px] text-[#313131] leading-[64px] font-bold mb-2 md:text-[56px]">
         Partnerlerimiz
       </p>
       <Slider className="h-[300px] py-[75px]" {...settings}>

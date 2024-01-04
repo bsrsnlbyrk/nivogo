@@ -9,11 +9,11 @@ const FastFashion = () => {
   const { isMobile } = useUserAgent();
 
   return (
-    <div className="text-center">
-      <p className="mb-7 text-[#313131] text-[56px] leading-[64px] font-bold">
+    <div className="text-center px-6 md:px-0 mb-[86px]">
+      <p className="mb-7 text-[#313131] text-[28px] md:text-[56px] md:leading-[64px] font-bold">
         Hızlı Moda'nın <span className="text-[#01675A]">Dünyamıza</span> Etkisi
       </p>
-      <p className="mb-[86px] text-[34px] leading-[44px] text-[#333333]">
+      <p className="mb-9 text-lg leading-7 md:text-[34px] md:leading-[44px] text-[#333333] md:mb-[86px]">
         Hızlı modanın etkisi ile, henüz kullanıcısı ile tanışamadan atık hale
         gelen veya ihtiyacımızdan fazlasını alıp kullanmadığımız ürünlerle
         dünyamıza zarar veriyoruz.
@@ -25,11 +25,12 @@ const FastFashion = () => {
             alt="c02"
             width={isMobile ? 293 : 350}
             height={isMobile ? 293 : 350}
+            className="mx-auto"
           />
-          <p className="mt-4 text-6 leading-8 text-[#313131] font-bold">
+          <p className="mt-4 text-2xl leading-8 text-[#313131] font-bold">
             Karbon Emisyonu
           </p>
-          <p className="text-lg md:text-6 leading-8 text-[#999999]">
+          <p className="text-lg md:text-2xl leading-8 text-[#999999]">
             Küresel karbon emisyonunun %10’u moda endüstrisinden kaynaklı. Bu
             toplam uçuşların ve deniz taşımacılığının neden olduğu karbon
             emisyonundan çok daha fazlası anlamına geliyor.

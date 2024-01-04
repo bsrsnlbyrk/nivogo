@@ -10,14 +10,14 @@ const HowItWorks = () => {
   const { isMobile } = useUserAgent();
 
   const tabContent = (
-    <div className="flex gap-x-[130px] items-center md:px-[135px] md:py-[80px]">
+    <div className="flex flex-wrap gap-x-[130px] justify-center items-center md:px-[135px] md:py-[80px]">
       <Image
         src="/images/smartmockups.jpg"
         alt=""
         width={isMobile ? 206 : 570}
         height={isMobile ? 151 : 480}
       />
-      <div className="text-left md:max-w-[470px]">
+      <div className="text-center md:max-w-[470px] md:text-left">
         <p className="text-xl leading-[64px] font-bold text-[#333333] md:text-[41px]">
           Hesabına Giriş Yap
         </p>
@@ -35,7 +35,7 @@ const HowItWorks = () => {
       <p className="mb-3 text-lg leading-6 font-medium text-[#313131] tracking-extremely-wide">
         NASIL ÇALIŞIR
       </p>
-      <p className="text-[56px] leading-[64px] font-bold text-[#333333]">
+      <p className="text-[28px] leading-[64px] font-bold text-[#333333] md:text-[56px]">
         Hayata Döndürmenin <span className="text-[#01675A]">Adımları</span>
       </p>
       <Tabs
@@ -43,11 +43,11 @@ const HowItWorks = () => {
         variant="underlined"
         classNames={{
           tabList:
-            "mt-[74px] gap-x-[150px] w-fit relative rounded-none p-0 font-normal mx-auto overflow-hidden",
+            "mt-[74px] gap-x-5 md:gap-x-[150px] w-fit relative rounded-none p-0 font-normal mx-auto overflow-auto md:overflow-hidden",
           cursor: "w-full bg-[#22d3ee]",
           tab: "max-w-fit px-0 h-12 [&>span]:h-1 [&>span]:bg-[#01675A]",
           tabContent:
-            "text-[23px] outline-none leading-6 text-[#999999] group-data-[selected=true]:font-bold group-data-[selected=true]:text-[#222222]",
+            "text-[15px] md:text-[23px] outline-none leading-6 text-[#999999] group-data-[selected=true]:font-bold group-data-[selected=true]:text-[#222222]",
         }}
       >
         <Tab key="login" title="Giriş Yap">
